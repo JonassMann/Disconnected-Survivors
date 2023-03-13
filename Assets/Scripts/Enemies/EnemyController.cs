@@ -24,7 +24,15 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        foreach (EnemyMovement em in enemies)
-            em.DoMove(player.transform);
+        for (int i = enemies.Count-1; i >= 0; i--)
+        {
+            if (enemies[i] == null)
+            {
+                enemies.RemoveAt(i);
+                continue;
+            }
+
+            enemies[i].DoMove(player.transform);
+        }
     }
 }

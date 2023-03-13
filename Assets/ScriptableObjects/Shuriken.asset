@@ -16,5 +16,5 @@ MonoBehaviour:
   size: 0.3
   speed: 2
   duration: 10
-  pCount: 3
+  pCount: 1
   cooldown: 0
