@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class ShurikenProjectile : MonoBehaviour
@@ -27,7 +28,7 @@ public class ShurikenProjectile : MonoBehaviour
     {
         if(collision.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<Enemy>().TakeDamage(damage);
             DestroyProjectile();
         }
     }

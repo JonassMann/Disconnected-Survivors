@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private List<EnemyMovement> enemies;
+    private List<Enemy> enemies;
     private GameObject player;
     private EnemySpawner spawner;
 
@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
-        enemies= new List<EnemyMovement>();
+        enemies= new List<Enemy>();
         player = GameObject.FindGameObjectWithTag("Player");
         spawner = GetComponent<EnemySpawner>();
     }

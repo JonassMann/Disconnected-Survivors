@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
         camWidth = camHeight * Camera.main.aspect;
     }
 
-    public void DoSpawn(GameObject enemy, List<EnemyMovement> enemyList)
+    public void DoSpawn(GameObject enemy, List<Enemy> enemyList)
     {
         spawnTimer += Time.deltaTime;
         if (spawnTimer < spawnInterval) return;
@@ -28,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
 
         GameObject tempEnemy = Instantiate(enemy, GetSpawnPos(), Quaternion.identity);
 
-        enemyList.Add(tempEnemy.GetComponent<EnemyMovement>());
+        enemyList.Add(tempEnemy.GetComponent<Enemy>());
     }
 
     private Vector3 GetSpawnPos()

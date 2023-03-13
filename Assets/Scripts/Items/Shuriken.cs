@@ -12,7 +12,7 @@ public class Shuriken : Weapon
     {
         base.DoAttack();
 
-        GameObject closestEnemy = PlayerTools.FindClosestWithTag(gameObject, "Enemy");
+        GameObject closestEnemy = PlayerTools.FindClosestEnemy(gameObject);
         if (closestEnemy == null) return;
 
         StartCoroutine(SpawnProjectiles((closestEnemy.transform.position - transform.position).normalized));
