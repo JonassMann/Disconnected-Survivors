@@ -8,9 +8,12 @@ public class ShurikenProjectile : MonoBehaviour
     private bool isActive = true;
     private float damage;
 
-    public void Spawn(Vector3 direction, WeaponStats stats)
+    private float pierceCount;
+
+    public void Spawn(Vector3 direction, WeaponStatBlock stats)
     {
         damage = stats.damage;
+        pierceCount = stats.pierce;
         transform.localScale = Vector3.one * stats.size;
         GetComponent<Rigidbody2D>().velocity = direction * stats.speed;
         Invoke(nameof(DestroyProjectile), stats.duration);
@@ -26,10 +29,12 @@ public class ShurikenProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        if (collision.tag == "Enemy")
         {
             collision.GetComponent<Enemy>().TakeDamage(damage);
-            DestroyProjectile();
+            pierceCount--;
+            if (pierceCount <= 0)
+                DestroyProjectile();
         }
     }
 }

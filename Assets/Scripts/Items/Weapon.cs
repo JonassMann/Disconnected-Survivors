@@ -6,14 +6,16 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private WeaponStats baseStats;
-    protected WeaponStats stats;
+    [SerializeField] private GameObject evolvedWeapon;
+    protected WeaponStatBlock stats;
+    public int level = 1;
 
     [SerializeField] private float attackSpeed;
     private float attackTimer;
 
     private void Awake()
     {
-        stats = baseStats;
+        stats = baseStats.stats[0];
     }
 
     private void Start()
@@ -35,8 +37,8 @@ public class Weapon : MonoBehaviour
         // Debug.Log("Attack: " + name);
     }
 
-    public void SetStats(WeaponStats addStats)
-    {
-        stats = baseStats + addStats;
-    }
+    //public void SetStats(WeaponStats addStats)
+    //{
+    //    stats = baseStats + addStats;
+    //}
 }

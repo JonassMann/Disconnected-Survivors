@@ -22,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
 
     public void DoSpawn(GameObject enemy, List<Enemy> enemyList)
     {
+        if (enemyList.Count >= spawnCap) return;
+
         spawnTimer += Time.deltaTime;
         if (spawnTimer < spawnInterval) return;
         spawnTimer = 0;

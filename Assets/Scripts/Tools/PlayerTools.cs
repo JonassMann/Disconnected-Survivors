@@ -74,4 +74,9 @@ public static class PlayerTools
 
         return highHp;
     }
+
+    public static float GetNextExp(int currentLevel)
+    {
+        return currentLevel * 100;
+    }
 }
