@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Sprite itemImg;
+    public string itemName;
+
     [SerializeField] private WeaponStats baseStats;
     [SerializeField] private GameObject evolvedWeapon;
     protected WeaponStatBlock stats;
     public int level = 1;
+
+    private int maxLevel;
 
     [SerializeField] private float attackSpeed;
     private float attackTimer;
@@ -37,8 +42,20 @@ public class Weapon : MonoBehaviour
         // Debug.Log("Attack: " + name);
     }
 
-    //public void SetStats(WeaponStats addStats)
-    //{
-    //    stats = baseStats + addStats;
-    //}
+    public void LevelUp()
+    {
+        level++;
+
+        // If max level, try evolve
+
+        SetStats();
+    }
+
+    public void SetStats(WeaponStatBlock addStats = null)
+    {
+        if (addStats == null)
+            stats = baseStats.stats[level];
+        else
+            stats = baseStats.stats[level] + addStats;
+    }
 }

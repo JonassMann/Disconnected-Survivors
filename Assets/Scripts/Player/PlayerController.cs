@@ -1,5 +1,4 @@
 using Sirenix.OdinInspector;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,11 +12,14 @@ public class PlayerController : MonoBehaviour
     public int level = 1;
     public float showExp = 0;
 
-    // List gameobject weapons
+    private int levelsForItems = 0;
 
-    private void Start()
+    private Dictionary<string, Weapon> weapons;
+
+    private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        weapons = new Dictionary<string, Weapon>();
     }
 
     void Update()
@@ -27,9 +29,14 @@ public class PlayerController : MonoBehaviour
         // Run weapon stuff, WeaponStats parameter
     }
 
-    public void AddWeapon()
+    public void AddWeapon(string weaponName, GameObject weapon)
     {
-
+        if (weapons.ContainsKey(weaponName))
+            weapons[weaponName].LevelUp();
+        else
+        {
+            weapons[weaponName] = GameObject.Instantiate(weapon, transform).GetComponent<Weapon>();
+        }
     }
 
     [Button]
@@ -42,6 +49,7 @@ public class PlayerController : MonoBehaviour
         {
             showExp -= PlayerTools.GetNextExp(level);
             level++;
+            levelsForItems++;
         }
     }
 }

@@ -8,9 +8,6 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Weapon Stats", menuName = "Stats/Weapon Stats")]
 public class WeaponStats : ScriptableObject
 {
-    public Image itemImg;
-    public string itemName;
-
     public List<WeaponStatBlock> stats;
 }
 

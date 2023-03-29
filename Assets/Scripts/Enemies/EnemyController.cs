@@ -28,6 +28,8 @@ public class EnemyController : MonoBehaviour
         {
             if (enemies[i] == null)
             {
+                player.GetComponent<PlayerController>().AddExp(50);
+
                 enemies.RemoveAt(i);
                 continue;
             }
