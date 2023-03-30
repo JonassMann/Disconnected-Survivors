@@ -16,10 +16,21 @@ public class ItemGetScreen : MonoBehaviour
     public List<GameObject> itemList;
     private List<GameObject> randomizedItems;
 
+    private int levelCount;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         randomizedItems = new List<GameObject>();
+    }
+
+    public void OpenItemScreen(int items, int maxCount = 3)
+    {
+        itemScreen.SetActive(true);
+        joyStick.SetActive(false);
+        Time.timeScale = 0;
+
+        RollItem(maxCount);
     }
 
     private void RollItem(int maxCount)
@@ -39,15 +50,19 @@ public class ItemGetScreen : MonoBehaviour
 
         for (int i = 0; i < maxCount && i < randomizedItems.Count; i++)
             SetItem(buttons[i], randomizedItems[i]);
-
-        itemScreen.SetActive(true);
-        joyStick.SetActive(false);
     }
 
     public void SelectItem(int val)
     {
+        if (val >= randomizedItems.Count) return;
 
+        player.GetComponent<PlayerController>().AddWeapon(randomizedItems[val].GetComponent<Weapon>().itemName, randomizedItems[val]);
 
+        if(levelCount > 0)
+        {
+            levelCount--;
+            return;
+        }
         CloseItemScreen();
     }
 
@@ -60,6 +75,7 @@ public class ItemGetScreen : MonoBehaviour
 
     private void CloseItemScreen()
     {
+        Time.timeScale = 1f;
         itemScreen.SetActive(false);
         joyStick.SetActive(true);
     }

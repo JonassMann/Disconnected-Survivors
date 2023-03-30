@@ -45,6 +45,7 @@ public class Weapon : MonoBehaviour
     public void LevelUp()
     {
         level++;
+        Debug.Log($"{itemName} levelled up to {level}");
 
         // If max level, try evolve
 
@@ -53,9 +54,11 @@ public class Weapon : MonoBehaviour
 
     public void SetStats(WeaponStatBlock addStats = null)
     {
+        // if (baseStats.stats.Count < level) return;
+
         if (addStats == null)
-            stats = baseStats.stats[level];
+            stats = baseStats.stats[level-1];
         else
-            stats = baseStats.stats[level] + addStats;
+            stats = baseStats.stats[level-1] + addStats;
     }
 }

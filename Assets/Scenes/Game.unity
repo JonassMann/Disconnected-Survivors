@@ -140,72 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312a45a958e468648b62a02dbd1e7978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &169266121
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 766783628}
-    m_Modifications:
-    - target: {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_Name
-      value: Shuriken
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572595176596603910, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6647670228770437557, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-      propertyPath: itemName
-      value: Shuriken
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
---- !u!1 &169266122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
-  m_PrefabInstance: {fileID: 169266121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &323471045
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,13 +254,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemScreen: {fileID: 495743590}
-  joyStick: {fileID: 0}
+  joyStick: {fileID: 1982480496}
   buttons:
   - {fileID: 1351462352}
   - {fileID: 1624693413}
   - {fileID: 1624693413}
   itemList:
-  - {fileID: 169266122}
+  - {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
 --- !u!1 &495743590
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +548,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 661961346}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 450412176}
+        m_TargetAssemblyTypeName: ItemGetScreen, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &661961346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1063,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1351462355}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 450412176}
+        m_TargetAssemblyTypeName: ItemGetScreen, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1351462355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,7 +1269,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1624693416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 450412176}
+        m_TargetAssemblyTypeName: ItemGetScreen, Assembly-CSharp
+        m_MethodName: SelectItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1624693416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,6 +1803,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyObject: {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
+--- !u!1 &1982480496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881087803549984437, guid: ec536a7718376554185e4a856d5ae230, type: 3}
+  m_PrefabInstance: {fileID: 1136736850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983729592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,6 +2131,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361802, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: startWeapon
+      value: 
+      objectReference: {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
     - target: {fileID: 4232520697689361804, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: m_Name
       value: Player

@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private PlayerMovement playerMovement;
+    private ItemGetScreen itemGetScreen;
+
+    public GameObject startWeapon;
 
     [SerializeField] private float moveSpeed;
 
@@ -12,14 +15,18 @@ public class PlayerController : MonoBehaviour
     public int level = 1;
     public float showExp = 0;
 
-    private int levelsForItems = 0;
-
     private Dictionary<string, Weapon> weapons;
 
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        itemGetScreen = GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemGetScreen>();
         weapons = new Dictionary<string, Weapon>();
+
+        if(startWeapon != null)
+        {
+            AddWeapon(startWeapon.GetComponent<Weapon>().itemName, startWeapon);
+        }
     }
 
     void Update()
@@ -45,11 +52,16 @@ public class PlayerController : MonoBehaviour
         exp += addExp;
         showExp += addExp;
 
+        int levelsForItems = 0;
+
         while (showExp >= PlayerTools.GetNextExp(level))
         {
             showExp -= PlayerTools.GetNextExp(level);
             level++;
             levelsForItems++;
         }
+
+        if (levelsForItems <= 0) return;
+        itemGetScreen.OpenItemScreen(levelsForItems);
     }
 }
