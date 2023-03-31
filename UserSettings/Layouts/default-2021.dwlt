@@ -171,6 +171,7 @@ MonoBehaviour:
     height: 584
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> main
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -346,6 +347,7 @@ MonoBehaviour:
     height: 584
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> main
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -1373,7 +1375,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
