@@ -10,48 +10,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9ddcd6db83298b428a1b0088b26d37b, type: 3}
-  m_Name: Shuriken
+  m_Name: CyberKatana
   m_EditorClassIdentifier: 
   stats:
-  - damage: 5
+  - damage: 8
     size: 0.5
-    speed: 3
-    duration: 3
+    speed: 1
+    duration: 0.1
     pCount: 1
     cooldown: 1
     pierce: 0
-  - damage: 5
+  - damage: 8
     size: 0.6
-    speed: 3
-    duration: 3
-    pCount: 2
-    cooldown: 1
+    speed: 1
+    duration: 0.1
+    pCount: 1
+    cooldown: 0.9
     pierce: 0
-  - damage: 5
+  - damage: 8
     size: 0.7
-    speed: 3
-    duration: 3
-    pCount: 3
-    cooldown: 1
+    speed: 1
+    duration: 0.1
+    pCount: 2
+    cooldown: 0.8
     pierce: 0
-  - damage: 5
+  - damage: 8
     size: 0.8
-    speed: 3
-    duration: 3
-    pCount: 4
-    cooldown: 1
+    speed: 1
+    duration: 0.1
+    pCount: 2
+    cooldown: 0.7
     pierce: 0
-  - damage: 5
+  - damage: 8
     size: 0.9
-    speed: 3
-    duration: 3
-    pCount: 5
-    cooldown: 1
+    speed: 1
+    duration: 0.1
+    pCount: 2
+    cooldown: 0.6
     pierce: 0
-  - damage: 5
+  - damage: 8
     size: 1
-    speed: 3
-    duration: 3
-    pCount: 6
-    cooldown: 1
+    speed: 1
+    duration: 0.1
+    pCount: 3
+    cooldown: 0.5
     pierce: 0

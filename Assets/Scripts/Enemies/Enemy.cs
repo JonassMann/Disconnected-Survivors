@@ -15,12 +15,14 @@ public class Enemy : MonoBehaviour
         health = stats.maxHealth;
     }
 
-    public void DoMove(Transform player)
+    public bool DoMove(Transform player)
     {
-        if (player == null) return;
+        if (player == null) return false;
 
         Vector2 moveVel = player.position - transform.position;
         rb.velocity = moveVel.normalized * stats.speed;
+
+        return false;
     }
 
     public void TakeDamage(float damage)

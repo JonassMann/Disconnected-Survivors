@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour
     public void AddWeapon(string weaponName, GameObject weapon)
     {
         if (weapons.ContainsKey(weaponName))
-            weapons[weaponName].LevelUp();
+        {
+            if (weapons[weaponName].LevelUp())
+                itemGetScreen.RemoveItem(weapon);
+        }
         else
         {
             weapons[weaponName] = GameObject.Instantiate(weapon, transform).GetComponent<Weapon>();

@@ -257,10 +257,11 @@ MonoBehaviour:
   joyStick: {fileID: 1982480496}
   buttons:
   - {fileID: 1351462352}
-  - {fileID: 1624693413}
+  - {fileID: 661961343}
   - {fileID: 1624693413}
   itemList:
   - {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
+  - {fileID: 886606777896519729, guid: d91304c89b0c319499517015eaf7bd67, type: 3}
 --- !u!1 &495743590
 GameObject:
   m_ObjectHideFlags: 0
