@@ -26,6 +26,8 @@ public class ItemGetScreen : MonoBehaviour
 
     public void OpenItemScreen(int items, int maxCount = 3)
     {
+        if (itemList.Count <= 0) return;
+
         itemScreen.SetActive(true);
         joyStick.SetActive(false);
         Time.timeScale = 0;
@@ -78,5 +80,11 @@ public class ItemGetScreen : MonoBehaviour
         Time.timeScale = 1f;
         itemScreen.SetActive(false);
         joyStick.SetActive(true);
+    }
+
+    public void RemoveItem(GameObject item)
+    {
+        if (itemList.Contains(item))
+            itemList.Remove(item);
     }
 }

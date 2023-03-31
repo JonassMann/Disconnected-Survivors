@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4572595176596603909
+--- !u!1 &886606777896519729
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4572595176596603910}
-  - component: {fileID: 6647670228770437557}
+  - component: {fileID: 886606777896519735}
+  - component: {fileID: 886606777896519728}
   m_Layer: 0
-  m_Name: Shuriken
+  m_Name: CyberKatana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4572595176596603910
+--- !u!4 &886606777896519735
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572595176596603909}
+  m_GameObject: {fileID: 886606777896519729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,24 +32,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6647670228770437557
+--- !u!114 &886606777896519728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572595176596603909}
+  m_GameObject: {fileID: 886606777896519729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331e64bd0ab291c4abc0b48510eff703, type: 3}
+  m_Script: {fileID: 11500000, guid: 60d2c28220b071b44a71ad0b47281d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemImg: {fileID: 0}
-  itemName: Shuriken
-  baseStats: {fileID: 11400000, guid: 91e2be2eae51c884da92035673d179d4, type: 2}
+  itemName: Cyber Katana
+  baseStats: {fileID: 11400000, guid: ff0f4183161c9d64595101e7c9517f70, type: 2}
   evolvedWeapon: {fileID: 0}
   level: 1
   maxLevel: 6
-  attackSpeed: 2
-  projectile: {fileID: 4200111008960299299, guid: 714c9b7c9e62028499b474981523f565, type: 3}
-  multiShotTime: 0.2
+  attackSpeed: 3
+  projectile: {fileID: 2001580858381167599, guid: bc956c142b03e6c43a6063998add4cbd, type: 3}
+  multiShotTime: 0.3

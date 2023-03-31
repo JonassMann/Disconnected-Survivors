@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour
     protected WeaponStatBlock stats;
     public int level = 1;
 
-    private int maxLevel;
+    public int maxLevel;
 
     [SerializeField] private float attackSpeed;
     private float attackTimer;
@@ -42,19 +42,23 @@ public class Weapon : MonoBehaviour
         // Debug.Log("Attack: " + name);
     }
 
-    public void LevelUp()
+    public bool LevelUp()
     {
         level++;
-        Debug.Log($"{itemName} levelled up to {level}");
 
         // If max level, try evolve
 
         SetStats();
+
+        if (level >= maxLevel)
+            return true;
+
+        return false;
     }
 
     public void SetStats(WeaponStatBlock addStats = null)
     {
-        // if (baseStats.stats.Count < level) return;
+        if (level > maxLevel) return;
 
         if (addStats == null)
             stats = baseStats.stats[level-1];
