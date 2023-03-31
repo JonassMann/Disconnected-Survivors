@@ -2133,6 +2133,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4232520697689361802, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361802, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: IFrameTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361802, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: startWeapon
       value: 
       objectReference: {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
@@ -2143,6 +2151,18 @@ PrefabInstance:
     - target: {fileID: 4232520697689361804, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361806, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361806, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361806, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
