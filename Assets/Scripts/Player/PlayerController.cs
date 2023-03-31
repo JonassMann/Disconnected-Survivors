@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject startWeapon;
 
+    public float IFrameTime;
+    private float IFrameTimer = 0;
+    public float health;
+
     [SerializeField] private float moveSpeed;
 
     [SerializeField] private float exp = 0;
@@ -32,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         playerMovement.DoMove(moveSpeed);
+        if (IFrameTimer > 0) IFrameTimer -= Time.deltaTime;
 
         // Run weapon stuff, WeaponStats parameter
     }
@@ -66,5 +71,19 @@ public class PlayerController : MonoBehaviour
 
         if (levelsForItems <= 0) return;
         itemGetScreen.OpenItemScreen(levelsForItems);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        if (IFrameTimer > 0) return;
+
+        IFrameTimer = IFrameTime;
+
+        health -= damage;
+
+        if(health <= 0)
+        {
+            Debug.Log("Ded");
+        }
     }
 }

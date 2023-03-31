@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyStats stats;
 
     public float health;
+    public float touchDamage;
 
     void Start()
     {
@@ -23,6 +24,16 @@ public class Enemy : MonoBehaviour
         rb.velocity = moveVel.normalized * stats.speed;
 
         return false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Test");
+
+        if (collision.transform.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(touchDamage);
+        }
     }
 
     public void TakeDamage(float damage)
