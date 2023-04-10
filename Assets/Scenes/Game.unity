@@ -2161,6 +2161,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4232520697689361806, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232520697689361806, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: m_UseFullKinematicContacts
       value: 1
       objectReference: {fileID: 0}
