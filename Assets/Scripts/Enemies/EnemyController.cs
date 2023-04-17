@@ -4,27 +4,51 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public float gameTimer;
+
     private List<Enemy> enemies;
     private GameObject player;
     private EnemySpawner spawner;
 
-    [SerializeField] private GameObject enemyObject;
+    private float spawnTimer;
+
+    [SerializeField] private EnemyWave enemyWave;
+    private int wavePos;
 
     private void Start()
     {
-        enemies= new List<Enemy>();
+        enemies = new List<Enemy>();
         player = GameObject.FindGameObjectWithTag("Player");
         spawner = GetComponent<EnemySpawner>();
+
+        spawnTimer = 0;
+        gameTimer = 0;
+        wavePos = 0;
     }
 
     void Update()
     {
-        spawner.DoSpawn(enemyObject, enemies);
+        gameTimer += Time.deltaTime;
+
+        if (wavePos >= enemyWave.waveList.Count)
+        {
+            Debug.Log("Wave list end");
+            return;
+        }
+
+        if (gameTimer >= enemyWave.waveList[wavePos].timeNext)
+            wavePos++;
+
+        spawnTimer += Time.deltaTime;
+        if (spawnTimer < enemyWave.waveList[wavePos].interval) return;
+
+        spawnTimer = 0;
+        spawner.DoSpawn(enemyWave.waveList[wavePos].enemy, enemies);
     }
 
     private void FixedUpdate()
     {
-        for (int i = enemies.Count-1; i >= 0; i--)
+        for (int i = enemies.Count - 1; i >= 0; i--)
         {
             if (enemies[i] == null)
             {

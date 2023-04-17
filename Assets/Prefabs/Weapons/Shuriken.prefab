@@ -47,7 +47,7 @@ MonoBehaviour:
   itemImg: {fileID: 0}
   itemName: Shuriken
   baseStats: {fileID: 11400000, guid: 91e2be2eae51c884da92035673d179d4, type: 2}
-  evolvedWeapon: {fileID: 0}
+  evolvedWeapon: {fileID: 4572595176596603909, guid: ab6faa3c486334a429f32b030d5f37ff, type: 3}
   level: 1
   maxLevel: 6
   attackSpeed: 2

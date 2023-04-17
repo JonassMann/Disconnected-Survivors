@@ -9,11 +9,12 @@ public class PlayerController : MonoBehaviour
 
     public GameObject startWeapon;
 
+    public PlayerStats playerStats;
+    public WeaponStatBlock weaponStats;
+
     public float IFrameTime;
     private float IFrameTimer = 0;
-    public float health;
-
-    [SerializeField] private float moveSpeed;
+    private float health;
 
     [SerializeField] private float exp = 0;
     public int level = 1;
@@ -23,21 +24,28 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        health = playerStats.maxHealth;
         playerMovement = GetComponent<PlayerMovement>();
         itemGetScreen = GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemGetScreen>();
         weapons = new Dictionary<string, Weapon>();
 
-        if(startWeapon != null)
+        if (startWeapon != null)
         {
             AddWeapon(startWeapon.GetComponent<Weapon>().itemName, startWeapon);
         }
     }
 
+    private void Start()
+    {
+        AddExp(0);
+    }
+
     void Update()
     {
-        playerMovement.DoMove(moveSpeed);
+        playerMovement.DoMove(playerStats.moveSpeed);
         if (IFrameTimer > 0) IFrameTimer -= Time.deltaTime;
 
+        // Add regen
         // Run weapon stuff, WeaponStats parameter
     }
 
@@ -45,8 +53,11 @@ public class PlayerController : MonoBehaviour
     {
         if (weapons.ContainsKey(weaponName))
         {
-            if (weapons[weaponName].LevelUp())
-                itemGetScreen.RemoveItem(weapon);
+            GameObject temp = weapons[weaponName].LevelUp(gameObject);
+            if (temp == null) return;
+
+            if (temp != gameObject) itemGetScreen.AddItem(temp);
+            itemGetScreen.RemoveItem(weapon);
         }
         else
         {
@@ -57,6 +68,8 @@ public class PlayerController : MonoBehaviour
     [Button]
     public void AddExp(float addExp)
     {
+        addExp *= playerStats.expMult;
+
         exp += addExp;
         showExp += addExp;
 
@@ -79,9 +92,9 @@ public class PlayerController : MonoBehaviour
 
         IFrameTimer = IFrameTime;
 
-        health -= damage;
+        health -= damage - playerStats.armor;
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Debug.Log("Ded");
         }

@@ -41,17 +41,3 @@ MonoBehaviour:
     pCount: 4
     cooldown: 1
     pierce: 0
-  - damage: 5
-    size: 0.9
-    speed: 3
-    duration: 3
-    pCount: 5
-    cooldown: 1
-    pierce: 0
-  - damage: 5
-    size: 1
-    speed: 3
-    duration: 3
-    pCount: 6
-    cooldown: 1
-    pierce: 0

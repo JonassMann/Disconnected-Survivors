@@ -16,8 +16,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         joystick = GameObject.Find("Joystick").GetComponent<VariableJoystick>();
         moveInput = new Vector2();
-
-        EnableGrav();
     }
 
     private void Update()
@@ -26,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
             moveInput = new Vector2(joystick.Horizontal, joystick.Vertical);
         else
         {
-            moveInput = GravitySensor.current.gravity.ReadValue();
+            moveInput = GravitySensor.current.gravity.ReadValue() * 3;
         }
     }
 
@@ -53,6 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void DoMove(float speed)
     {
-        rb.velocity = moveInput * speed * 5;
+        rb.velocity = moveInput * speed;
     }
 }

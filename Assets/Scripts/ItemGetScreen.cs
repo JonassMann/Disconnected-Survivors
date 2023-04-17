@@ -87,4 +87,10 @@ public class ItemGetScreen : MonoBehaviour
         if (itemList.Contains(item))
             itemList.Remove(item);
     }
+
+    public void AddItem(GameObject item)
+    {
+        if (!itemList.Contains(item))
+            itemList.Add(item);
+    }
 }
