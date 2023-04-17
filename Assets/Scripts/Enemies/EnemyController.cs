@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float gameTimer;
+    public float maxGameTime;
 
     private List<Enemy> enemies;
     private GameObject player;
@@ -29,6 +30,9 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         gameTimer += Time.deltaTime;
+
+        if (gameTimer > maxGameTime)
+            EndRound();
 
         if (wavePos >= enemyWave.waveList.Count)
         {
@@ -60,5 +64,10 @@ public class EnemyController : MonoBehaviour
 
             enemies[i].DoMove(player.transform);
         }
+    }
+
+    private void EndRound()
+    {
+
     }
 }

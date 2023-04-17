@@ -28,15 +28,16 @@ public class PlayerController : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         itemGetScreen = GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemGetScreen>();
         weapons = new Dictionary<string, Weapon>();
+    }
+
+    private void Start()
+    {
+        // Read and add player stats
 
         if (startWeapon != null)
         {
             AddWeapon(startWeapon.GetComponent<Weapon>().itemName, startWeapon);
         }
-    }
-
-    private void Start()
-    {
         AddExp(0);
     }
 
@@ -59,9 +60,15 @@ public class PlayerController : MonoBehaviour
             if (temp != gameObject) itemGetScreen.AddItem(temp);
             itemGetScreen.RemoveItem(weapon);
         }
+        else if (weapon.GetComponent<Weapon>().childWeapon != "")
+        {
+            weapons[weaponName] = Instantiate(weapon, transform).GetComponent<Weapon>();
+            Destroy(weapons[weapons[weaponName].childWeapon].gameObject);
+            weapons.Remove(weapons[weaponName].childWeapon);
+        }
         else
         {
-            weapons[weaponName] = GameObject.Instantiate(weapon, transform).GetComponent<Weapon>();
+            weapons[weaponName] = Instantiate(weapon, transform).GetComponent<Weapon>();
         }
     }
 

@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     public string itemName;
 
     [SerializeField] private WeaponStats baseStats;
+    public string childWeapon = "";
     [SerializeField] private GameObject evolvedWeapon;
     protected WeaponStatBlock stats;
     public int level = 1;
@@ -18,6 +19,8 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
+        if (evolvedWeapon != null)
+            evolvedWeapon.GetComponent<Weapon>().childWeapon = itemName;
         stats = baseStats.stats[0];
     }
 
@@ -43,6 +46,11 @@ public class Weapon : MonoBehaviour
     public GameObject LevelUp(GameObject controller)
     {
         level++;
+
+        if (level > baseStats.stats.Count)
+        {
+            if (evolvedWeapon == null) return controller;
+        }
 
         // If max level, try evolve
 
