@@ -50,6 +50,6 @@ MonoBehaviour:
   childWeapon: Laser Cannon
   evolvedWeapon: {fileID: 0}
   level: 1
-  attackSpeed: 4
+  attackSpeed: 5
   projectile: {fileID: 2597254237140763046, guid: bdc8bf3c9da235a4d936a5602b0ecad4, type: 3}
   multiShotTime: 0
