@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemImg: {fileID: 0}
   itemName: Laser Cannon E
-  baseStats: {fileID: 11400000, guid: f2dc4d63495524746afcab77930c79a8, type: 2}
+  baseStats: {fileID: 11400000, guid: 3fc11a3d127a6ae43bff2b412c569119, type: 2}
   childWeapon: Laser Cannon
   evolvedWeapon: {fileID: 0}
   level: 1

@@ -46,11 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemImg: {fileID: 0}
   itemName: Cyber Katana E
-  baseStats: {fileID: 11400000, guid: ff0f4183161c9d64595101e7c9517f70, type: 2}
+  baseStats: {fileID: 11400000, guid: 4466daf551e34404b8f4f6acd6fb5e81, type: 2}
   childWeapon: Cyber Katana
   evolvedWeapon: {fileID: 0}
   level: 1
   attackSpeed: 3
-  isEvent: 0
   projectile: {fileID: 2001580858381167599, guid: bc956c142b03e6c43a6063998add4cbd, type: 3}
   multiShotTime: 0.3
