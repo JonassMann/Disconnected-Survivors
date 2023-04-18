@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bcf1aabf7af4434280ef35816fcd88e, type: 3}
-  m_Name: Test Enemy Stats
+  m_Script: {fileID: 11500000, guid: bf9cff7439476bb4ebb4838bb88a4d84, type: 3}
+  m_Name: TestWave
   m_EditorClassIdentifier: 
-  speed: 1
-  maxHealth: 10
-  touchDamage: 20
+  waveList:
+  - enemy: {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
+    interval: 1
+    timeNext: 60

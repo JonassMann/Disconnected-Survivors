@@ -1,19 +1,24 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
+    // Events
+    public event EventHandler OnTakeDamage;
+
     private PlayerMovement playerMovement;
     private ItemGetScreen itemGetScreen;
 
     public GameObject startWeapon;
 
+    public PlayerStats playerStats;
+    public WeaponStatBlock weaponStats;
+
     public float IFrameTime;
     private float IFrameTimer = 0;
-    public float health;
-
-    [SerializeField] private float moveSpeed;
+    private float health;
 
     [SerializeField] private float exp = 0;
     public int level = 1;
@@ -23,21 +28,29 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        health = playerStats.maxHealth;
         playerMovement = GetComponent<PlayerMovement>();
         itemGetScreen = GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemGetScreen>();
         weapons = new Dictionary<string, Weapon>();
+    }
 
-        if(startWeapon != null)
+    private void Start()
+    {
+        // Read and add player stats
+
+        if (startWeapon != null)
         {
             AddWeapon(startWeapon.GetComponent<Weapon>().itemName, startWeapon);
         }
+        AddExp(0);
     }
 
     void Update()
     {
-        playerMovement.DoMove(moveSpeed);
+        playerMovement.DoMove(playerStats.moveSpeed);
         if (IFrameTimer > 0) IFrameTimer -= Time.deltaTime;
 
+        // Add regen
         // Run weapon stuff, WeaponStats parameter
     }
 
@@ -45,18 +58,29 @@ public class PlayerController : MonoBehaviour
     {
         if (weapons.ContainsKey(weaponName))
         {
-            if (weapons[weaponName].LevelUp())
-                itemGetScreen.RemoveItem(weapon);
+            GameObject temp = weapons[weaponName].LevelUp(gameObject);
+            if (temp == null) return;
+
+            if (temp != gameObject) itemGetScreen.AddItem(temp);
+            itemGetScreen.RemoveItem(weapon);
+        }
+        else if (weapon.GetComponent<Weapon>().childWeapon != "")
+        {
+            weapons[weaponName] = Instantiate(weapon, transform).GetComponent<Weapon>();
+            Destroy(weapons[weapons[weaponName].childWeapon].gameObject);
+            weapons.Remove(weapons[weaponName].childWeapon);
         }
         else
         {
-            weapons[weaponName] = GameObject.Instantiate(weapon, transform).GetComponent<Weapon>();
+            weapons[weaponName] = Instantiate(weapon, transform).GetComponent<Weapon>();
         }
     }
 
     [Button]
     public void AddExp(float addExp)
     {
+        addExp *= playerStats.expMult;
+
         exp += addExp;
         showExp += addExp;
 
@@ -76,14 +100,18 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         if (IFrameTimer > 0) return;
+        damage -= playerStats.armor;
 
+        if (damage <= 0) return;
         IFrameTimer = IFrameTime;
 
+        OnTakeDamage?.Invoke(this, EventArgs.Empty);
         health -= damage;
 
-        if(health <= 0)
+        if (health <= 0)
         {
-            Debug.Log("Ded");
+            //Debug.Log("Ded");
+            GameObject.Find("EnemyController").GetComponent<EnemyController>().EndRound();
         }
     }
 }

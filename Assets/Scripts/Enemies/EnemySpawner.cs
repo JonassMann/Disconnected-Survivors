@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private float spawnInterval;
     [SerializeField] private int spawnCap;
     [SerializeField] private float spawnOffset;
-
-    private float spawnTimer;
     private float camHeight;
     private float camWidth;
 
     private void Start()
     {
-        spawnTimer = 0;
-
         camHeight = Camera.main.orthographicSize * 2;
         camWidth = camHeight * Camera.main.aspect;
     }
@@ -23,10 +18,6 @@ public class EnemySpawner : MonoBehaviour
     public void DoSpawn(GameObject enemy, List<Enemy> enemyList)
     {
         if (enemyList.Count >= spawnCap) return;
-
-        spawnTimer += Time.deltaTime;
-        if (spawnTimer < spawnInterval) return;
-        spawnTimer = 0;
 
         GameObject tempEnemy = Instantiate(enemy, GetSpawnPos(), Quaternion.identity);
 

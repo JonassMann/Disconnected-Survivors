@@ -7,12 +7,14 @@ public class EnemyStats : ScriptableObject
 {
     public float speed;
     public float maxHealth;
+    public float touchDamage;
 
     public static EnemyStats operator +(EnemyStats a, EnemyStats b)
     {
         EnemyStats result = new EnemyStats();
         result.speed = a.speed + b.speed;
         result.maxHealth = a.maxHealth + b.maxHealth;
+        result.touchDamage = a.touchDamage + b.touchDamage;
 
         return result;
     }

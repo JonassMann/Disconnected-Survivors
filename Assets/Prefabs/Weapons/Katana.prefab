@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4572595176596603910}
-  - component: {fileID: 6647670228770437557}
+  - component: {fileID: 7335911044004329925}
   m_Layer: 0
-  m_Name: Shuriken
+  m_Name: Katana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6647670228770437557
+--- !u!114 &7335911044004329925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,15 +41,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4572595176596603909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331e64bd0ab291c4abc0b48510eff703, type: 3}
+  m_Script: {fileID: 11500000, guid: 97f965777a1cf1b4c918b3bb8a9e01f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemImg: {fileID: 0}
-  itemName: Shuriken
-  baseStats: {fileID: 11400000, guid: 91e2be2eae51c884da92035673d179d4, type: 2}
-  evolvedWeapon: {fileID: 4572595176596603909, guid: ab6faa3c486334a429f32b030d5f37ff, type: 3}
+  itemName: Katana
+  baseStats: {fileID: 11400000, guid: f2dc4d63495524746afcab77930c79a8, type: 2}
+  childWeapon: 
+  evolvedWeapon: {fileID: 0}
   level: 1
-  maxLevel: 6
   attackSpeed: 2
-  projectile: {fileID: 4200111008960299299, guid: 714c9b7c9e62028499b474981523f565, type: 3}
-  multiShotTime: 0.2
+  projectile: {fileID: 2597254237140763046, guid: 3cad8dde6fa6f5e4bb6a866f93125a1f, type: 3}
+  multiShotTime: 0.3
