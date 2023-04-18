@@ -9,6 +9,8 @@ public class EnemySpawner : MonoBehaviour
     private float camHeight;
     private float camWidth;
 
+    public LayerMask wallMask;
+
     private void Start()
     {
         camHeight = Camera.main.orthographicSize * 2;
@@ -43,7 +45,7 @@ public class EnemySpawner : MonoBehaviour
                 break;
 
             case 2:
-                pos.x = camWidth/ 2 + spawnOffset; 
+                pos.x = camWidth / 2 + spawnOffset;
                 pos.y = Random.Range(-camHeight / 2, camHeight / 2);
                 break;
 

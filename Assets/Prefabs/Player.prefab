@@ -100,13 +100,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bef2a97148a5f740bf30cc7a8053e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startWeapon: {fileID: 0}
-  IFrameTime: 0
-  health: 0
-  moveSpeed: 2
+  startWeapon: {fileID: 4572595176596603909, guid: c6351b31be7a9dd4ab2b994a588bb934, type: 3}
+  playerStats:
+    maxHealth: 100
+    regen: 0
+    armor: 0
+    moveSpeed: 2
+    expMult: 1
+  weaponStats:
+    damage: 1
+    size: 1
+    speed: 1
+    duration: 3
+    pCount: 1
+    cooldown: 1
+    pierce: 0
+  IFrameTime: 0.1
   exp: 0
   level: 1
   showExp: 0
+  expBar: {fileID: 0}
+  healthBar: {fileID: 0}
 --- !u!114 &4232520697689361801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   moveInput: {x: 0, y: 0}
+  useGrav: 0
 --- !u!50 &4232520697689361806
 Rigidbody2D:
   serializedVersion: 4
@@ -131,16 +146,16 @@ Rigidbody2D:
   m_GameObject: {fileID: 4232520697689361804}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!70 &4232520697689361805
 CapsuleCollider2D:
