@@ -24,7 +24,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (PlayerPrefs.HasKey("useGrav"))
         {
-
+            if (useGrav && PlayerPrefs.GetInt("useGrav") == 0)
+                DisableGrav();
+            else if (!useGrav && PlayerPrefs.GetInt("useGrav") == 1)
+                EnableGrav();
         }
     }
 
