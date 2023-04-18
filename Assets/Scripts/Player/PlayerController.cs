@@ -2,6 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,12 +27,18 @@ public class PlayerController : MonoBehaviour
 
     private Dictionary<string, Weapon> weapons;
 
+    public Image expBar;
+    public Image healthBar;
+
     private void Awake()
     {
         health = playerStats.maxHealth;
         playerMovement = GetComponent<PlayerMovement>();
         itemGetScreen = GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemGetScreen>();
         weapons = new Dictionary<string, Weapon>();
+
+        UpdateHealth();
+        UpdateExp();
     }
 
     private void Start()
@@ -92,6 +99,7 @@ public class PlayerController : MonoBehaviour
             level++;
             levelsForItems++;
         }
+        UpdateExp();
 
         if (levelsForItems <= 0) return;
         itemGetScreen.OpenItemScreen(levelsForItems);
@@ -108,10 +116,22 @@ public class PlayerController : MonoBehaviour
         OnTakeDamage?.Invoke(this, EventArgs.Empty);
         health -= damage;
 
+        UpdateHealth();
+
         if (health <= 0)
         {
             //Debug.Log("Ded");
             GameObject.Find("EnemyController").GetComponent<EnemyController>().EndRound();
         }
+    }
+
+    public void UpdateExp()
+    {
+        expBar.fillAmount = showExp / PlayerTools.GetNextExp(level);
+    }
+
+    public void UpdateHealth()
+    {
+        healthBar.fillAmount = health / playerStats.maxHealth;
     }
 }
