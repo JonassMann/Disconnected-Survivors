@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,13 +42,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 15, y: 16, z: 846, w: 10}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -115,18 +115,347 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 16
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8102a16aaf041bb48a662192d9ae7fd3
+      internalID: -141077161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 16
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f9995fc7bf4214f95f9e0a8b9c8edc
+      internalID: 144929387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 16
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424c2b8be0f055c459577842a985b8d9
+      internalID: 816566465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 16
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6903e5c4952bc0548ae82c51dad38430
+      internalID: 682572474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097ac22c74d7c4244ae96e475cd371de
+      internalID: 826649222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 17
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42de4792b5578094a889851292fab275
+      internalID: -836165604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 15
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971d03bda9a19a4449fc329b27945020
+      internalID: 540993801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 15
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b765e155fe9e0eb4487d21e025a7a418
+      internalID: 348728790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 5
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ac7ff6081c3e34a9c3b7068e0ce3f3
+      internalID: -591663688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 15
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9df6fc8e5081a646999daec45e214c2
+      internalID: 1447287480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 15
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a806ff7956e22449ec65fdc31b0ab9
+      internalID: 894215358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 5
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c82ab1e4be42554f8ae35ee5fa30bed
+      internalID: 1344242166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 15
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f34922f16fe5024c8b4d4c3ee1f7100
+      internalID: 1603431160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMYattack-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 15
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae94e8b8d16edaf4891e60e1261565c2
+      internalID: -1190406131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ENEMYattack-Sheet_13: 1603431160
+      ENEMYattack-Sheet_14: -1190406131
+      ENEMYattack-Sheet_0: -141077161
+      ENEMYattack-Sheet_2: 816566465
+      ENEMYattack-Sheet_16: -525239543
+      ENEMYattack-Sheet_5: -836165604
+      ENEMYattack-Sheet_11: 894215358
+      ENEMYattack-Sheet_31: 514763050
+      ENEMYattack-Sheet_25: 1992813426
+      ENEMYattack-Sheet_34: 601708960
+      ENEMYattack-Sheet_8: 348728790
+      ENEMYattack-Sheet_15: -403832016
+      ENEMYattack-Sheet_27: -445029374
+      ENEMYattack-Sheet_29: -1197499599
+      ENEMYattack-Sheet_24: -397467362
+      ENEMYattack-Sheet_21: 121901346
+      ENEMYattack-Sheet_12: 1344242166
+      ENEMYattack-Sheet_20: -1424561982
+      ENEMYattack-Sheet_18: -142850308
+      ENEMYattack-Sheet_19: -1178804458
+      ENEMYattack-Sheet_28: -2126244811
+      ENEMYattack-Sheet_22: -78306753
+      ENEMYattack-Sheet_26: 1043410752
+      ENEMYattack-Sheet_33: -1780402973
+      ENEMYattack-Sheet_9: -591663688
+      ENEMYattack-Sheet_17: 1136858737
+      ENEMYattack-Sheet_30: -76937271
+      ENEMYattack-Sheet_32: 1781662743
+      ENEMYattack-Sheet_6: 540993801
+      ENEMYattack-Sheet_4: 826649222
+      ENEMYattack-Sheet_3: 682572474
+      ENEMYattack-Sheet_7: -1031063126
+      ENEMYattack-Sheet_23: 169224843
+      ENEMYattack-Sheet_10: 1447287480
+      ENEMYattack-Sheet_1: 144929387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

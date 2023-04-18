@@ -21,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         joystick = GameObject.Find("Joystick").GetComponent<VariableJoystick>();
         moveInput = new Vector2();
+
+        if (PlayerPrefs.HasKey("useGrav"))
+        {
+
+        }
     }
 
     private void Update()
@@ -48,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
             InputSystem.EnableDevice(GravitySensor.current);
             joystick.gameObject.SetActive(false);
             useGrav = true;
+            PlayerPrefs.SetInt("useGrav", 1);
         }
     }
 
@@ -58,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         InputSystem.DisableDevice(GravitySensor.current);
         joystick.gameObject.SetActive(true);
         useGrav = false;
+        PlayerPrefs.SetInt("useGrav", 0);
     }
 
     public void DoMove(float speed)
