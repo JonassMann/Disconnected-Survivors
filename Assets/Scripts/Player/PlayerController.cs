@@ -1,9 +1,13 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
+    // Events
+    public event EventHandler OnTakeDamage;
+
     private PlayerMovement playerMovement;
     private ItemGetScreen itemGetScreen;
 
@@ -96,14 +100,18 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         if (IFrameTimer > 0) return;
+        damage -= playerStats.armor;
 
+        if (damage <= 0) return;
         IFrameTimer = IFrameTime;
 
-        health -= damage - playerStats.armor;
+        OnTakeDamage?.Invoke(this, EventArgs.Empty);
+        health -= damage;
 
         if (health <= 0)
         {
-            Debug.Log("Ded");
+            //Debug.Log("Ded");
+            GameObject.Find("EnemyController").GetComponent<EnemyController>().EndRound();
         }
     }
 }

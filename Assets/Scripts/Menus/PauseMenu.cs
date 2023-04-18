@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseScreen;
+    public GameObject endScreen;
+    public TMP_Text goldText;
     public GameObject settingsScreen;
 
     public Toggle gyroToggle;
@@ -30,6 +33,13 @@ public class PauseMenu : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void EndGame(int goldGained)
+    {
+        goldText.text = $"Gold Gained: {goldGained}";
+        endScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void ShowSettings()

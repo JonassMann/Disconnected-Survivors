@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour
 {
     public float gameTimer;
     public float maxGameTime;
+    public float goldPerSec;
 
     private List<Enemy> enemies;
     private GameObject player;
@@ -66,8 +67,11 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void EndRound()
+    public void EndRound()
     {
-
+        int goldGained = (int)(goldPerSec * gameTimer);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<PauseMenu>().EndGame(goldGained);
+        // Show game end screen
+        // Add gold with simple formula to PlayerPrefs
     }
 }
