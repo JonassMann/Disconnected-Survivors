@@ -16,7 +16,6 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] private float attackSpeed;
     private float attackTimer;
-    public bool isEvent = false;
 
     private void Awake()
     {

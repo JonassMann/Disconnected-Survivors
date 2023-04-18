@@ -466,6 +466,7 @@ MonoBehaviour:
   - {fileID: 886606777896519729, guid: d91304c89b0c319499517015eaf7bd67, type: 3}
   - {fileID: 4572595176596603909, guid: c6351b31be7a9dd4ab2b994a588bb934, type: 3}
   - {fileID: 886606777896519729, guid: 01fe925750639104892306f6fa460716, type: 3}
+  - {fileID: 4572595176596603909, guid: b304fa5eb1cbc8144ad4e47749d813d5, type: 3}
 --- !u!114 &450412177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4980,7 +4981,7 @@ PrefabInstance:
     - target: {fileID: 4232520697689361802, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: startWeapon
       value: 
-      objectReference: {fileID: 4572595176596603909, guid: 4fbfe1c94afefff488cc78179718982a, type: 3}
+      objectReference: {fileID: 4572595176596603909, guid: b304fa5eb1cbc8144ad4e47749d813d5, type: 3}
     - target: {fileID: 4232520697689361804, guid: eaa286832a5eab34ca55247aab21fdd6, type: 3}
       propertyPath: m_Name
       value: Player
