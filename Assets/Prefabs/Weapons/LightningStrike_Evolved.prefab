@@ -46,11 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemImg: {fileID: 0}
   itemName: Lightning Strike E
-  baseStats: {fileID: 11400000, guid: f667efd485a69f548b8ecd617d9cf550, type: 2}
+  baseStats: {fileID: 11400000, guid: 74e39437a9385a24881ae181ec167bc9, type: 2}
   childWeapon: Lightning Strike
   evolvedWeapon: {fileID: 0}
   level: 1
   attackSpeed: 3
-  isEvent: 0
   projectile: {fileID: 2001580858381167599, guid: 947c6cfb6fcf16c4393a2757f9da86a4, type: 3}
   multiShotTime: 0.3
