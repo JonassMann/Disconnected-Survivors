@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -17,6 +18,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyWave enemyWave;
     private int wavePos;
 
+    private int killCount;
+    private float goldCount;
+
+    public TMP_Text killCountText;
+    public TMP_Text goldCountText;
+
     private void Start()
     {
         enemies = new List<Enemy>();
@@ -31,6 +38,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         gameTimer += Time.deltaTime;
+        goldCount += goldPerSec * Time.deltaTime;
+        goldCountText.text = $"{(int)goldCount}";
 
         if (gameTimer > maxGameTime)
             EndRound();
@@ -58,7 +67,7 @@ public class EnemyController : MonoBehaviour
             if (enemies[i] == null)
             {
                 player.GetComponent<PlayerController>().AddExp(50);
-
+                killCountText.text = $"{++killCount}";
                 enemies.RemoveAt(i);
                 continue;
             }
@@ -69,8 +78,7 @@ public class EnemyController : MonoBehaviour
 
     public void EndRound()
     {
-        int goldGained = (int)(goldPerSec * gameTimer);
-        GameObject.FindGameObjectWithTag("GameController").GetComponent<PauseMenu>().EndGame(goldGained);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<PauseMenu>().EndGame((int)goldCount);
         // Show game end screen
         // Add gold with simple formula to PlayerPrefs
     }
