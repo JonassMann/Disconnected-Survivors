@@ -50,6 +50,6 @@ MonoBehaviour:
   childWeapon: Katana
   evolvedWeapon: {fileID: 0}
   level: 1
-  attackSpeed: 2
+  attackSpeed: 2.4
   projectile: {fileID: 2597254237140763046, guid: 3cad8dde6fa6f5e4bb6a866f93125a1f, type: 3}
   multiShotTime: 0.3

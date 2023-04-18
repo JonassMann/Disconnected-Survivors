@@ -50,6 +50,6 @@ MonoBehaviour:
   childWeapon: 
   evolvedWeapon: {fileID: 4572595176596603909, guid: 9d0d4107e81b851468981d4ec4d997e9, type: 3}
   level: 1
-  attackSpeed: 2
+  attackSpeed: 2.5
   projectile: {fileID: 4200111008960299299, guid: 714c9b7c9e62028499b474981523f565, type: 3}
-  multiShotTime: 0.2
+  multiShotTime: 0.3

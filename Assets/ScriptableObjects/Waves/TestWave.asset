@@ -15,4 +15,4 @@ MonoBehaviour:
   waveList:
   - enemy: {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
     interval: 1
-    timeNext: 60
+    timeNext: 900

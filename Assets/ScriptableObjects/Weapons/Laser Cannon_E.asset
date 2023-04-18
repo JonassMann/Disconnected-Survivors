@@ -13,31 +13,31 @@ MonoBehaviour:
   m_Name: Laser Cannon_E
   m_EditorClassIdentifier: 
   stats:
-  - damage: 5
-    size: 1
+  - damage: 6
+    size: 2
     speed: 3
-    duration: 0.2
+    duration: 0.3
     pCount: 1
     cooldown: 1
     pierce: 0
-  - damage: 5
-    size: 1.2
+  - damage: 7
+    size: 2.2
     speed: 3
-    duration: 0.2
-    pCount: 2
+    duration: 0.35
+    pCount: 1
     cooldown: 1
     pierce: 0
-  - damage: 5
-    size: 1.4
+  - damage: 8
+    size: 2.5
     speed: 3
-    duration: 0.2
-    pCount: 3
+    duration: 0.4
+    pCount: 1
     cooldown: 1
     pierce: 0
-  - damage: 5
-    size: 1.6
+  - damage: 10
+    size: 3
     speed: 3
-    duration: 0.2
-    pCount: 4
+    duration: 0.5
+    pCount: 1
     cooldown: 1
     pierce: 0
