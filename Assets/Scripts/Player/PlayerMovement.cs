@@ -5,14 +5,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public SpriteRenderer playerSprite;
+
     private Rigidbody2D rb;
     [SerializeField] private VariableJoystick joystick;
 
     [SerializeField] private Vector2 moveInput;
     public bool useGrav = false;
 
+    public bool facingRight = true;
+
     void Start()
     {
+        playerSprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         joystick = GameObject.Find("Joystick").GetComponent<VariableJoystick>();
         moveInput = new Vector2();
@@ -25,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             moveInput = GravitySensor.current.gravity.ReadValue() * 3;
+        }
+
+        if ((facingRight && moveInput.x < 0) || (!facingRight && moveInput.x > 0))
+        {
+            facingRight = !facingRight;
+            playerSprite.flipX = !facingRight;
         }
     }
 

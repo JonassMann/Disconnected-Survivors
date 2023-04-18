@@ -71,7 +71,7 @@ public class ItemGetScreen : MonoBehaviour
     private void SetItem(GameObject button, GameObject weapon)
     {
         button.SetActive(true);
-        button.GetComponentInChildren<Image>().sprite = weapon.GetComponent<Weapon>().itemImg;
+        button.transform.GetChild(1).GetComponent<Image>().sprite = weapon.GetComponent<Weapon>().itemImg;
         button.GetComponentInChildren<TMP_Text>().text = weapon.GetComponent<Weapon>().itemName;
     }
 

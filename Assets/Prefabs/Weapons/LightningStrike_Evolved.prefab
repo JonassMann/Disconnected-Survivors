@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d2c28220b071b44a71ad0b47281d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 0}
+  itemImg: {fileID: 789504393, guid: ce9159b871333a446b94de0d3ce45cd9, type: 3}
   itemName: Lightning Strike E
   baseStats: {fileID: 11400000, guid: 74e39437a9385a24881ae181ec167bc9, type: 2}
   childWeapon: Lightning Strike
