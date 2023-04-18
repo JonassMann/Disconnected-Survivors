@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3a03e1369bc7f543b4407614ef15607
+guid: 181366935220b6248bb0b571784a4ae3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,97 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NEWCOIN-Sheet_0
+      name: Icons1_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 19
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 408adaa1b692c5246bc98534f23abd3e
-      internalID: -1573982706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NEWCOIN-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 8
-        width: 19
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8af3fb0a26d299489b9fe6508baca31
-      internalID: -831959442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NEWCOIN-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 8
-        width: 19
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 351037eb9ba5dc049b97be2803464306
-      internalID: 674224243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NEWCOIN-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 8
-        width: 19
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c89041971cf1e79468325181a1884044
-      internalID: 977598889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NEWCOIN-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 6
+        x: 9
+        y: 40
         width: 14
-        height: 22
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee5c5f5eaff443f4986394fa7b9926fa
-      internalID: -1381286714
+      spriteID: 32c514b9b57411442a4a23e261175313
+      internalID: 520140384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NEWCOIN-Sheet_5
+      name: Icons1_1
       rect:
         serializedVersion: 2
-        x: 174
-        y: 6
-        width: 4
-        height: 22
+        x: 32
+        y: 48
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0164294f5775eb49bb7200671b3d347
-      internalID: -608984597
+      spriteID: 739ccf34f9197754187437f6d0273fda
+      internalID: 1663678732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NEWCOIN-Sheet_6
+      name: Icons1_2
       rect:
         serializedVersion: 2
-        x: 199
-        y: 4
-        width: 17
-        height: 24
+        x: 80
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e13caae4f70bae42841865804739f2a
-      internalID: -1840540809
+      spriteID: 382aa38e6d408084898b85a439dc0f7a
+      internalID: 562390770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NEWCOIN-Sheet_7
+      name: Icons1_3
       rect:
         serializedVersion: 2
-        x: 232
-        y: 7
-        width: 19
-        height: 20
+        x: 119
+        y: 1
+        width: 5
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 672eda3e9e16e934a838f19b440d368b
-      internalID: -1101018519
+      spriteID: d8a7e121e53a07c48b3227dbf8a84de3
+      internalID: -101783528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NEWCOIN-Sheet_8
+      name: Icons1_4
       rect:
         serializedVersion: 2
-        x: 264
-        y: 7
-        width: 19
-        height: 20
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,8 +215,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87794c15fc7176040af65570a5280865
-      internalID: -714518379
+      spriteID: 791e8e1b8bf47ba46a3b4dfd801d156b
+      internalID: -1081518955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons1_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922bb9265def82641bb3de63aedc3261
+      internalID: 790874967
       vertices: []
       indices: 
       edges: []
@@ -316,15 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NEWCOIN-Sheet_5: -608984597
-      NEWCOIN-Sheet_8: -714518379
-      NEWCOIN-Sheet_1: -831959442
-      NEWCOIN-Sheet_4: -1381286714
-      NEWCOIN-Sheet_2: 674224243
-      NEWCOIN-Sheet_0: -1573982706
-      NEWCOIN-Sheet_3: 977598889
-      NEWCOIN-Sheet_7: -1101018519
-      NEWCOIN-Sheet_6: -1840540809
+      Icons1_1: 1663678732
+      Icons1_5: 790874967
+      Icons1_0: 520140384
+      Icons1_3: -101783528
+      Icons1_2: 562390770
+      Icons1_4: -1081518955
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
