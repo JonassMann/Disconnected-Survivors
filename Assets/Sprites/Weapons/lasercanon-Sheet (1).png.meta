@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 10eced1809e796b4eafb93476d0b45e2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53207cb4fa98b047b5a2b0017fb09e9
+      internalID: -2021373132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae52cc1bfa52f1741be3b36d4a6ebf59
+      internalID: -181140644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a119231075d648980df06293da201
+      internalID: 92994910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f91911a19069d34da5f37a6c5f7f128
+      internalID: -1081591525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_4
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccbde37212c46d44a8fcdbdeb4cba79
+      internalID: 1612498582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a7ab92a402c794db5048e8690aae11
+      internalID: -786424721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_6
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f85c546bf4c764599570ad5b1af721
+      internalID: 146776152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d04f27657a6ef142a71b20cc662a917
+      internalID: -458387357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75edf3aabd2820548b5701a43ccc09cc
+      internalID: 992586731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b46d50df4dc01b4dbcf0fb1bddf91c9
+      internalID: -1993072655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba12266d026cd4446bac6c8b34d73d7b
+      internalID: -56206926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98686ac45335dd9479eb8bf7d1def38d
+      internalID: -783761802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20282e73983623c489d9ec8735fc8514
+      internalID: -1120977040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6925bec046d1349a17e7aac63b21ab
+      internalID: -1644200458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_14
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39fb20c02466f14aad967a2e22a892a
+      internalID: -1775439174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_15
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f582b58705c93145b7b46f15ddcb55f
+      internalID: -1783734791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_16
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444ec6de71026f547abfacdc8f9b2851
+      internalID: 1273036632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_17
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5e674ccf47f724fb4a92dc24602a5e
+      internalID: 98577049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659f0ced376cccf4fbe9068bc9324cc4
+      internalID: -613864862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_19
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fbd516b7223fb478aaae5221a39e88
+      internalID: -1814860032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_20
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe88f89905f65c4d81139c5f537b49e
+      internalID: 695514184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_21
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c21d7df1d5c364799ff5f7ab48d777
+      internalID: 236959986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_22
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377754b256628c540a8f518caeb6a296
+      internalID: 1142714056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_23
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075b37fd2d442e3438d27c17510fde49
+      internalID: -68395088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_24
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90de1273a50edae43aad2396e65d64ad
+      internalID: -1460715090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_25
+      rect:
+        serializedVersion: 2
+        x: 3575
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1007e896d1f86a8489b2e048907ca680
+      internalID: -1548858591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_26
+      rect:
+        serializedVersion: 2
+        x: 3718
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e72050737d433d409d1caa5dbe8cb33
+      internalID: 1743356367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_27
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db6ac26d9c00eb428cd9128b0e6f3ca
+      internalID: 2123348813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_28
+      rect:
+        serializedVersion: 2
+        x: 4147
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5b90f6b8b40b145ad7564a4838f9c6
+      internalID: -316753443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_29
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46d16d240e1c6343a0214ca2e787119
+      internalID: -174220361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_30
+      rect:
+        serializedVersion: 2
+        x: 4433
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10abf2158a607c247bd13e5ecbe08ea9
+      internalID: 1295456354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_31
+      rect:
+        serializedVersion: 2
+        x: 4719
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002e372bb0be4f04d9d72a1d613f7128
+      internalID: -1188025732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_32
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a023b573908ebe94c825dbf3b8c5ad63
+      internalID: 1550896684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_33
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed3128d9a07b5249b167f6d0d5e4bbd
+      internalID: -591289011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_34
+      rect:
+        serializedVersion: 2
+        x: 5148
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af478031818b0644f8a9b577874e1134
+      internalID: 1186619825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_35
+      rect:
+        serializedVersion: 2
+        x: 5434
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fbbf2a7e056c341b39187514a77b6e
+      internalID: -129625741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_36
+      rect:
+        serializedVersion: 2
+        x: 5577
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f489fedaa74910d438878e561a9287cc
+      internalID: 2048639183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_37
+      rect:
+        serializedVersion: 2
+        x: 5720
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71937f4ef1d1ba54ba296b5fd960424b
+      internalID: 1454066014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_38
+      rect:
+        serializedVersion: 2
+        x: 5863
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a569a9fde8a9e46a5f18848bce5991
+      internalID: 1438322338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_39
+      rect:
+        serializedVersion: 2
+        x: 6006
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91413d37b46ffa4da8351fab170cd22
+      internalID: 1624212868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_40
+      rect:
+        serializedVersion: 2
+        x: 6149
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb846cc568adc9b49a6717e02d7368b0
+      internalID: -1993664790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_41
+      rect:
+        serializedVersion: 2
+        x: 6292
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74d3fd0d7a75f40aefe034211b3f09
+      internalID: 1038207532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_42
+      rect:
+        serializedVersion: 2
+        x: 6435
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8575d0885679a458a8b289e339d50b
+      internalID: 340600273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_43
+      rect:
+        serializedVersion: 2
+        x: 6578
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb209ae4b15a90428d81fecfdd2b370
+      internalID: 1933896140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_44
+      rect:
+        serializedVersion: 2
+        x: 6721
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558e5915bb003ef459c33e5d850393ab
+      internalID: 790278739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_45
+      rect:
+        serializedVersion: 2
+        x: 6864
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864d661d2ff87d64da27983cdc670e36
+      internalID: 865107742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_46
+      rect:
+        serializedVersion: 2
+        x: 7007
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195bf030cda8220459d5ca738ab7468d
+      internalID: 470304144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_47
+      rect:
+        serializedVersion: 2
+        x: 7150
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad0ce497ccbcec43ba140306f8df04b
+      internalID: 443058974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_48
+      rect:
+        serializedVersion: 2
+        x: 7293
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b8a5b4c378c854ab2d2f715f32fe2d
+      internalID: 553943212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_49
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3a1efb6ee56b74fa34573b3f110b8f
+      internalID: 204839537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_50
+      rect:
+        serializedVersion: 2
+        x: 7579
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2694b6b9851ed7449a5e7735d6bc1394
+      internalID: -840049766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_51
+      rect:
+        serializedVersion: 2
+        x: 7722
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd853c9d8594b8d499809358d8b26de1
+      internalID: -1645390189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_52
+      rect:
+        serializedVersion: 2
+        x: 7865
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e08548ff8a517440a24f4f499fc2b88
+      internalID: 1190744638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_53
+      rect:
+        serializedVersion: 2
+        x: 8008
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b37ea9806644d34e9c132d9425414af
+      internalID: 204606812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_54
+      rect:
+        serializedVersion: 2
+        x: 8151
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa3c5b6d984ded49ba2189380d7bdcf
+      internalID: -666451060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_55
+      rect:
+        serializedVersion: 2
+        x: 8294
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61da60d7e7fdca14b88340334b1d577a
+      internalID: -674106277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_56
+      rect:
+        serializedVersion: 2
+        x: 8437
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e2e81e9cb24764cb7834c53fda7d65
+      internalID: -246702139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_57
+      rect:
+        serializedVersion: 2
+        x: 8580
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007b723ae4c137b479d0dacc556af8db
+      internalID: 1666648632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_58
+      rect:
+        serializedVersion: 2
+        x: 8723
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14eb3376a45ee143ab988bcfe1b5c02
+      internalID: 1902508360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_59
+      rect:
+        serializedVersion: 2
+        x: 8866
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6eca6e4538baf42a09391b30eaa8f8
+      internalID: -265740765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_60
+      rect:
+        serializedVersion: 2
+        x: 9009
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc653dd3546bc6844967692c1dffbb55
+      internalID: 1620147788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_61
+      rect:
+        serializedVersion: 2
+        x: 9152
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16de667769e6f0c48a409990f34f9cc3
+      internalID: 1392380948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lasercanon-Sheet (1)_62
+      rect:
+        serializedVersion: 2
+        x: 9295
+        y: 0
+        width: 143
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8718334623fc814a8d1d745cd4d2753
+      internalID: -537302797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      lasercanon-Sheet (1)_50: -840049766
+      lasercanon-Sheet (1)_58: 1902508360
+      lasercanon-Sheet (1)_33: -591289011
+      lasercanon-Sheet (1)_19: -1814860032
+      lasercanon-Sheet (1)_16: 1273036632
+      lasercanon-Sheet (1)_40: -1993664790
+      lasercanon-Sheet (1)_42: 340600273
+      lasercanon-Sheet (1)_48: 553943212
+      lasercanon-Sheet (1)_60: 1620147788
+      lasercanon-Sheet (1)_54: -666451060
+      lasercanon-Sheet (1)_12: -1120977040
+      lasercanon-Sheet (1)_49: 204839537
+      lasercanon-Sheet (1)_11: -783761802
+      lasercanon-Sheet (1)_5: -786424721
+      lasercanon-Sheet (1)_21: 236959986
+      lasercanon-Sheet (1)_43: 1933896140
+      lasercanon-Sheet (1)_6: 146776152
+      lasercanon-Sheet (1)_53: 204606812
+      lasercanon-Sheet (1)_46: 470304144
+      lasercanon-Sheet (1)_45: 865107742
+      lasercanon-Sheet (1)_61: 1392380948
+      lasercanon-Sheet (1)_4: 1612498582
+      lasercanon-Sheet (1)_28: -316753443
+      lasercanon-Sheet (1)_8: 992586731
+      lasercanon-Sheet (1)_51: -1645390189
+      lasercanon-Sheet (1)_41: 1038207532
+      lasercanon-Sheet (1)_7: -458387357
+      lasercanon-Sheet (1)_52: 1190744638
+      lasercanon-Sheet (1)_23: -68395088
+      lasercanon-Sheet (1)_18: -613864862
+      lasercanon-Sheet (1)_38: 1438322338
+      lasercanon-Sheet (1)_9: -1993072655
+      lasercanon-Sheet (1)_26: 1743356367
+      lasercanon-Sheet (1)_2: 92994910
+      lasercanon-Sheet (1)_47: 443058974
+      lasercanon-Sheet (1)_35: -129625741
+      lasercanon-Sheet (1)_37: 1454066014
+      lasercanon-Sheet (1)_39: 1624212868
+      lasercanon-Sheet (1)_30: 1295456354
+      lasercanon-Sheet (1)_14: -1775439174
+      lasercanon-Sheet (1)_44: 790278739
+      lasercanon-Sheet (1)_25: -1548858591
+      lasercanon-Sheet (1)_24: -1460715090
+      lasercanon-Sheet (1)_59: -265740765
+      lasercanon-Sheet (1)_1: -181140644
+      lasercanon-Sheet (1)_10: -56206926
+      lasercanon-Sheet (1)_15: -1783734791
+      lasercanon-Sheet (1)_20: 695514184
+      lasercanon-Sheet (1)_56: -246702139
+      lasercanon-Sheet (1)_29: -174220361
+      lasercanon-Sheet (1)_32: 1550896684
+      lasercanon-Sheet (1)_62: -537302797
+      lasercanon-Sheet (1)_34: 1186619825
+      lasercanon-Sheet (1)_17: 98577049
+      lasercanon-Sheet (1)_13: -1644200458
+      lasercanon-Sheet (1)_22: 1142714056
+      lasercanon-Sheet (1)_27: 2123348813
+      lasercanon-Sheet (1)_36: 2048639183
+      lasercanon-Sheet (1)_55: -674106277
+      lasercanon-Sheet (1)_57: 1666648632
+      lasercanon-Sheet (1)_0: -2021373132
+      lasercanon-Sheet (1)_31: -1188025732
+      lasercanon-Sheet (1)_3: -1081591525
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

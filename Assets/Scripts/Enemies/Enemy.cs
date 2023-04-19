@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyStats stats;
 
     public float health;
-    public float touchDamage;
 
     void Start()
     {
@@ -28,11 +27,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Test");
-
         if (collision.transform.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerController>().TakeDamage(touchDamage);
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(stats.touchDamage);
         }
     }
 

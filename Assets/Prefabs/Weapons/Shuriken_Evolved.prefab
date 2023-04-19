@@ -44,10 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331e64bd0ab291c4abc0b48510eff703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 0}
+  itemImg: {fileID: 21300000, guid: 353cbdb38a2059246b6cf652d1d3928a, type: 3}
   itemName: Shuriken E
-  baseStats: {fileID: 11400000, guid: 91e2be2eae51c884da92035673d179d4, type: 2}
-  evolvedWeapon: {fileID: 0}
+  baseStats: {fileID: 11400000, guid: 4d2a518b5f0f0484ca00964bd49efb3f, type: 2}
+  childWeapon: Shuriken
+  evolvedWeapon: {fileID: 4572595176596603909, guid: ab6faa3c486334a429f32b030d5f37ff, type: 3}
   level: 1
   attackSpeed: 2
   projectile: {fileID: 4200111008960299299, guid: 714c9b7c9e62028499b474981523f565, type: 3}

@@ -47,9 +47,9 @@ MonoBehaviour:
   itemImg: {fileID: 0}
   itemName: Cyber Katana
   baseStats: {fileID: 11400000, guid: ff0f4183161c9d64595101e7c9517f70, type: 2}
-  evolvedWeapon: {fileID: 0}
+  childWeapon: 
+  evolvedWeapon: {fileID: 886606777896519729, guid: 73865ce3802920043a6dfc90d909c15c, type: 3}
   level: 1
-  maxLevel: 6
   attackSpeed: 3
   projectile: {fileID: 2001580858381167599, guid: bc956c142b03e6c43a6063998add4cbd, type: 3}
   multiShotTime: 0.3
