@@ -5,13 +5,12 @@ using UnityEngine;
 
 public class EnemyBasic : Enemy
 {
-    public override void DoMove(Transform player)
+    public override void DoMove()
     {
-        base.DoMove(player);
-
+        base.DoMove();
         if (player == null) return;
 
-        Vector2 moveVel = player.position - transform.position;
+        Vector2 moveVel = player.transform.position - transform.position;
         rb.velocity = moveVel.normalized * stats.speed;
     }
 }

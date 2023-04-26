@@ -9,18 +9,23 @@ public class Enemy : MonoBehaviour
 
     public float health;
 
+    protected GameObject player;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         health = stats.maxHealth;
     }
 
-    public virtual void DoMove(Transform player)
+    public void DoInit(GameObject playerObject)
     {
-        if (player == null) return;
+        player = playerObject;
+    }
 
-        Vector2 moveVel = player.position - transform.position;
-        rb.velocity = moveVel.normalized * stats.speed;
+    public virtual void DoMove()
+    {
+        if (Vector2.Distance(transform.position, player.transform.position) > 20)
+            Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,6 +41,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health > 0) return;
 
+        player.GetComponent<PlayerController>().AddExp(stats.exp);
         Destroy(gameObject);
     }
 

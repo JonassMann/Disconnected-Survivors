@@ -9,12 +9,16 @@ public class EnemySpawner : MonoBehaviour
     private float camHeight;
     private float camWidth;
 
+    private GameObject player;
+
     public LayerMask wallMask;
 
     private void Start()
     {
         camHeight = Camera.main.orthographicSize * 2;
         camWidth = camHeight * Camera.main.aspect;
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void DoSpawn(GameObject enemy, List<Enemy> enemyList)
@@ -22,6 +26,7 @@ public class EnemySpawner : MonoBehaviour
         if (enemyList.Count >= spawnCap) return;
 
         GameObject tempEnemy = Instantiate(enemy, GetSpawnPos(), Quaternion.identity);
+        tempEnemy.GetComponent<Enemy>().DoInit(player);
 
         enemyList.Add(tempEnemy.GetComponent<Enemy>());
     }

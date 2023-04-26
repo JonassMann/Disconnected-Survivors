@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (onPC)
         {
-            moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) ;
+            moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized ;
         }
         else if (!useGrav)
             moveInput = new Vector2(joystick.Horizontal, joystick.Vertical);
