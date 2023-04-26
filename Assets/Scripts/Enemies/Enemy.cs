@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    [SerializeField] private EnemyStats stats;
+    protected Rigidbody2D rb;
+    [SerializeField] protected EnemyStats stats;
 
     public float health;
 
@@ -15,14 +15,12 @@ public class Enemy : MonoBehaviour
         health = stats.maxHealth;
     }
 
-    public bool DoMove(Transform player)
+    public virtual void DoMove(Transform player)
     {
-        if (player == null) return false;
+        if (player == null) return;
 
         Vector2 moveVel = player.position - transform.position;
         rb.velocity = moveVel.normalized * stats.speed;
-
-        return false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
