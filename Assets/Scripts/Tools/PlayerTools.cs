@@ -79,4 +79,23 @@ public static class PlayerTools
     {
         return currentLevel * 100;
     }
+
+    public static int SelectWeighted(List<int> weights)
+    {
+        int totalWeight = 0;
+        foreach (int i in weights)
+            totalWeight += i;
+
+        int selectionValue = Random.Range(1, totalWeight+1);
+        int incrementWeights = 0;
+
+        for (int i = 0; i < weights.Count; i++)
+        {
+            incrementWeights += weights[i];
+            if (selectionValue <= incrementWeights)
+                return i;
+        }
+
+        return 0;
+    }
 }

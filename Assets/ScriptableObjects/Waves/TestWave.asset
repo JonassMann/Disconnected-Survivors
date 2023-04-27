@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: TestWave
   m_EditorClassIdentifier: 
   waveList:
-  - enemy: {fileID: 8169094859322802416, guid: ff22bb33a3046f6438ff891ecaf3ddcd, type: 3}
+  - enemies:
+    - {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
+    - {fileID: 8169094859322802416, guid: ff22bb33a3046f6438ff891ecaf3ddcd, type: 3}
+    rates: 460000001e000000
+    stats: []
     interval: 1
-    timeNext: 900
+    duration: 900

@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     public float maxGameTime;
     public float goldPerSec;
 
+    private float waveTime;
+
     private List<Enemy> enemies;
     private EnemySpawner spawner;
 
@@ -36,6 +38,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         gameTimer += Time.deltaTime;
+        waveTime += Time.deltaTime;
         goldCount += goldPerSec * Time.deltaTime;
         goldCountText.text = $"{(int)goldCount}";
 
@@ -48,14 +51,24 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
-        if (gameTimer >= enemyWave.waveList[wavePos].timeNext)
+        if (waveTime >= enemyWave.waveList[wavePos].duration)
+        {
+            waveTime = 0;
             wavePos++;
+        }
 
         spawnTimer += Time.deltaTime;
         if (spawnTimer < enemyWave.waveList[wavePos].interval) return;
 
         spawnTimer = 0;
-        spawner.DoSpawn(enemyWave.waveList[wavePos].enemy, enemies);
+
+        int toSpawn = PlayerTools.SelectWeighted(enemyWave.waveList[wavePos].rates);
+        EnemyStats stats = null;
+
+        if (enemyWave.waveList[wavePos].stats.Count > toSpawn)
+            stats = enemyWave.waveList[wavePos].stats[toSpawn];
+
+        spawner.DoSpawn(enemyWave.waveList[wavePos].enemies[toSpawn], enemies, stats);
     }
 
     private void FixedUpdate()

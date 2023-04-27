@@ -20,4 +20,15 @@ public class EnemyStats : ScriptableObject
 
         return result;
     }
+
+    public static EnemyStats operator *(EnemyStats a, EnemyStats b)
+    {
+        EnemyStats result = new EnemyStats();
+        result.speed = a.speed * b.speed;
+        result.maxHealth = a.maxHealth * b.maxHealth;
+        result.touchDamage = a.touchDamage * b.touchDamage;
+        result.exp = a.exp * b.exp;
+
+        return result;
+    }
 }

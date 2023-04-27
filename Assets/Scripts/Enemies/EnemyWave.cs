@@ -13,8 +13,10 @@ public class EnemyWave : ScriptableObject
     [Serializable]
     public struct WaveObject
     {
-        public GameObject enemy;
+        public List<GameObject> enemies;
+        public List<int> rates;
+        public List<EnemyStats> stats;
         public float interval;
-        public float timeNext;
+        public float duration;
     }
 }

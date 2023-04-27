@@ -21,12 +21,14 @@ public class EnemySpawner : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public void DoSpawn(GameObject enemy, List<Enemy> enemyList)
+    public void DoSpawn(GameObject enemy, List<Enemy> enemyList, EnemyStats enemyStats)
     {
         if (enemyList.Count >= spawnCap) return;
 
         GameObject tempEnemy = Instantiate(enemy, GetSpawnPos(), Quaternion.identity);
         tempEnemy.GetComponent<Enemy>().DoInit(player);
+        if (enemyStats != null)
+            tempEnemy.GetComponent<Enemy>().stats += enemyStats;
 
         enemyList.Add(tempEnemy.GetComponent<Enemy>());
     }

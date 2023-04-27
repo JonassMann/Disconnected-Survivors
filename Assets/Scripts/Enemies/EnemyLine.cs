@@ -5,11 +5,18 @@ using UnityEngine;
 
 public class EnemyLine : Enemy
 {
+    public bool horizontal = true;
+
     public override void DoMove()
     {
         base.DoMove();
 
-        Vector2 moveVel = player.transform.position - transform.position;
-        rb.velocity = moveVel.normalized * stats.speed;
+        Vector2 moveDir = player.transform.position - transform.position;
+        if (horizontal)
+            moveDir.y = 0;
+        else
+            moveDir.x = 0;
+
+        rb.velocity = moveDir.normalized * stats.speed;
     }
 }

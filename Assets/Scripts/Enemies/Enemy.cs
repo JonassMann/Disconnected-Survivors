@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
-    [SerializeField] protected EnemyStats stats;
+    public EnemyStats stats;
 
     public float health;
 
