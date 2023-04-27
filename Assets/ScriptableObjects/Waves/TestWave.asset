@@ -17,6 +17,23 @@ MonoBehaviour:
     - {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
     - {fileID: 8169094859322802416, guid: ff22bb33a3046f6438ff891ecaf3ddcd, type: 3}
     rates: 460000001e000000
+    stats:
+    - {fileID: 11400000, guid: b34d45666d6856d498640202258ec776, type: 2}
+    - {fileID: 11400000, guid: b34d45666d6856d498640202258ec776, type: 2}
+    interval: 1
+    duration: 30
+  - enemies:
+    - {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
+    - {fileID: 8169094859322802416, guid: ff22bb33a3046f6438ff891ecaf3ddcd, type: 3}
+    rates: 1400000050000000
     stats: []
     interval: 1
-    duration: 900
+    duration: 30
+  - enemies:
+    - {fileID: 8169094859322802416, guid: ced450cdda23ffa4dbf97d01f55641c7, type: 3}
+    rates: 
+    stats:
+    - {fileID: 11400000, guid: c5a53bd5ac7438d40803697f50dacc3e, type: 2}
+    - {fileID: 11400000, guid: c5a53bd5ac7438d40803697f50dacc3e, type: 2}
+    interval: 0.8
+    duration: 30

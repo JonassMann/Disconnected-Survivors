@@ -1,3 +1,4 @@
+using Cinemachine.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class EnemyStats : ScriptableObject
 
     public static EnemyStats operator +(EnemyStats a, EnemyStats b)
     {
-        EnemyStats result = new EnemyStats();
+        EnemyStats result = CreateInstance<EnemyStats>();
         result.speed = a.speed + b.speed;
         result.maxHealth = a.maxHealth + b.maxHealth;
         result.touchDamage = a.touchDamage + b.touchDamage;
@@ -23,7 +24,7 @@ public class EnemyStats : ScriptableObject
 
     public static EnemyStats operator *(EnemyStats a, EnemyStats b)
     {
-        EnemyStats result = new EnemyStats();
+        EnemyStats result = CreateInstance<EnemyStats>();
         result.speed = a.speed * b.speed;
         result.maxHealth = a.maxHealth * b.maxHealth;
         result.touchDamage = a.touchDamage * b.touchDamage;
