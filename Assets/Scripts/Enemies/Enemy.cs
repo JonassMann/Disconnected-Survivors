@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    [SerializeField] private EnemyStats stats;
+    protected Rigidbody2D rb;
+    [SerializeField] protected EnemyStats stats;
 
     public float health;
+
+    protected GameObject player;
 
     void Start()
     {
@@ -15,14 +17,15 @@ public class Enemy : MonoBehaviour
         health = stats.maxHealth;
     }
 
-    public bool DoMove(Transform player)
+    public void DoInit(GameObject playerObject)
     {
-        if (player == null) return false;
+        player = playerObject;
+    }
 
-        Vector2 moveVel = player.position - transform.position;
-        rb.velocity = moveVel.normalized * stats.speed;
-
-        return false;
+    public virtual void DoMove()
+    {
+        if (Vector2.Distance(transform.position, player.transform.position) > 20)
+            Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,6 +41,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health > 0) return;
 
+        player.GetComponent<PlayerController>().AddExp(stats.exp);
         Destroy(gameObject);
     }
 

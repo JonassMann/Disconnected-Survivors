@@ -10,7 +10,6 @@ public class EnemyController : MonoBehaviour
     public float goldPerSec;
 
     private List<Enemy> enemies;
-    private GameObject player;
     private EnemySpawner spawner;
 
     private float spawnTimer;
@@ -27,7 +26,6 @@ public class EnemyController : MonoBehaviour
     private void Start()
     {
         enemies = new List<Enemy>();
-        player = GameObject.FindGameObjectWithTag("Player");
         spawner = GetComponent<EnemySpawner>();
 
         spawnTimer = 0;
@@ -66,13 +64,12 @@ public class EnemyController : MonoBehaviour
         {
             if (enemies[i] == null)
             {
-                player.GetComponent<PlayerController>().AddExp(50);
                 killCountText.text = $"{++killCount}";
                 enemies.RemoveAt(i);
                 continue;
             }
 
-            enemies[i].DoMove(player.transform);
+            enemies[i].DoMove();
         }
     }
 

@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 moveInput;
     public bool useGrav = false;
 
+    public bool onPC;
+
     public bool facingRight = true;
 
     void Start()
@@ -21,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         joystick = GameObject.Find("Joystick").GetComponent<VariableJoystick>();
         moveInput = new Vector2();
+
+        if(onPC)
+            joystick.gameObject.SetActive(false);
 
         if (PlayerPrefs.HasKey("useGrav"))
         {
@@ -33,7 +38,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (!useGrav)
+        if (onPC)
+        {
+            moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized ;
+        }
+        else if (!useGrav)
             moveInput = new Vector2(joystick.Horizontal, joystick.Vertical);
         else
         {
