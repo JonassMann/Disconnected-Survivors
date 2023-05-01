@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f965777a1cf1b4c918b3bb8a9e01f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 0}
+  itemImg: {fileID: 21300000, guid: 1ec10a4ac4e934a4eb2e4cbd42c2bb6a, type: 3}
   itemName: Katana
   baseStats: {fileID: 11400000, guid: f2dc4d63495524746afcab77930c79a8, type: 2}
   childWeapon: 

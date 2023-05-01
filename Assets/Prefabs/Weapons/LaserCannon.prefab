@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4d8b67ce6577345841a4af73424d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 0}
+  itemImg: {fileID: 443058974, guid: 10eced1809e796b4eafb93476d0b45e2, type: 3}
   itemName: Laser Cannon
   baseStats: {fileID: 11400000, guid: 4108da1381db0014ca39a713a0b53ae1, type: 2}
   childWeapon: 

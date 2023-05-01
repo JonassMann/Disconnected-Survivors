@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d2c28220b071b44a71ad0b47281d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemImg: {fileID: 0}
+  itemImg: {fileID: 22236745, guid: ce9159b871333a446b94de0d3ce45cd9, type: 3}
   itemName: Cyber Katana
   baseStats: {fileID: 11400000, guid: ff0f4183161c9d64595101e7c9517f70, type: 2}
   childWeapon: 
