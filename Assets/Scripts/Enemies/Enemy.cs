@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float health;
 
-    protected GameObject player;
+    public GameObject player;
 
     void Start()
     {
